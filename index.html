@@ -2,9 +2,14 @@
 <html>
 	<body>
 
-		<iframe frameborder=0 width="100%" height=1000 id="myiframe" src="https://www.163.com"></iframe>
+		<iframe frameborder=0 width="100%" id="myiframe" src="https://www.163.com"></iframe>
 		
 		
 	</body>
-	
+	<script>
+		var w = document.documentElement.clientWidth;
+		var h = document.documentElement.clientHeight;
+		var ifr = document.getElementById("myiframe");
+		ifr.height = w
+	</script>
 </html>
